@@ -2,10 +2,13 @@
   --bg-primary: #fdfdfd;
   --text-color-dark: #494949;
   --text-primary: #1b1b1b;
+  --brown: #4b3200;
   --bg-secondary: #ebe7e0;
   --text-secondary: white;
+  --orange: #ffc400;
   --bg-brand: #867f70;
   --text-color-brand: #867f70;
+  --lighter-brown: #613020;
 }
 
 .w-layout-layout {
@@ -178,6 +181,9 @@ a:hover {
 }
 
 .section {
+  background-color: var(--brown);
+  color: var(--text-primary);
+  -webkit-text-stroke-color: var(--bg-secondary);
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
@@ -186,6 +192,7 @@ a:hover {
 .container {
   width: 90%;
   max-width: 1280px;
+  background-color: #000;
   margin-left: auto;
   margin-right: auto;
 }
@@ -252,6 +259,10 @@ a:hover {
   line-height: 1.5;
 }
 
+.paragraph-large.text-color-secondary {
+  color: var(--brown);
+}
+
 .paragraph-small {
   color: var(--text-primary);
   font-size: 14px;
@@ -279,6 +290,7 @@ a:hover {
 
 .button-primary.full-width {
   width: 100%;
+  color: var(--brown);
   justify-content: space-between;
   align-items: center;
 }
@@ -297,7 +309,7 @@ a:hover {
 }
 
 .navigation {
-  background-color: var(--bg-secondary);
+  background-color: var(--orange);
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -392,6 +404,14 @@ a:hover {
   line-height: 1.1;
 }
 
+.h2.text-color-secondary {
+  color: var(--brown);
+  -webkit-text-stroke-color: var(--bg-primary);
+  background-color: rgba(0, 0, 0, 0);
+  font-family: Cardo, sans-serif;
+  font-size: 45px;
+}
+
 .styles-section-label {
   border-bottom: 1px solid var(--text-color-dark);
   margin-top: 96px;
@@ -400,8 +420,9 @@ a:hover {
 }
 
 .h3 {
-  color: var(--text-primary);
+  color: var(--brown);
   letter-spacing: -.02px;
+  background-color: #fff;
   margin-bottom: 16px;
   font-family: Cardo, sans-serif;
   font-size: 30px;
@@ -526,17 +547,18 @@ a:hover {
 }
 
 .nav-link.last {
-  margin-right: -20px;
+  margin-right: 0;
 }
 
 .hero-content {
   width: 100%;
   height: 100%;
-  background-color: var(--bg-brand);
+  background-color: var(--orange);
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 80px;
+  font-family: Cardo, sans-serif;
   display: flex;
 }
 
@@ -555,11 +577,20 @@ a:hover {
 .about-me-stack {
   grid-column-gap: 24px;
   grid-row-gap: 36px;
+  -webkit-text-fill-color: inherit;
+  background-color: #fff;
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');
+  background-position: 0 0;
+  background-size: auto;
+  background-clip: border-box;
   padding: 0;
 }
 
 .about-me-paragraph-wrapper {
   max-width: 670px;
+  color: var(--brown);
+  background-color: #fff;
+  font-weight: 400;
 }
 
 .margin-bottom-36px {
@@ -874,6 +905,7 @@ a:hover {
 }
 
 .icons-font {
+  color: var(--brown);
   align-self: flex-start;
   font-family: Icons Font, sans-serif;
   font-size: 20px;
@@ -938,6 +970,15 @@ a:hover {
 .style-guide-image-cell {
   justify-content: center;
   align-items: flex-end;
+}
+
+.cell {
+  background-color: #fff;
+}
+
+.cell-2 {
+  -webkit-text-stroke-color: var(--bg-primary);
+  background-color: #fff;
 }
 
 @media screen and (max-width: 991px) {
@@ -1172,15 +1213,6 @@ a:hover {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-#w-node-_4672e5e5-5e45-9d7f-5afc-8262b9643471-c00ac0c3 {
-  grid-template-rows: auto;
-  grid-template-columns: 2fr 1fr;
-}
-
-#w-node-_4672e5e5-5e45-9d7f-5afc-8262b9643472-c00ac0c3, #w-node-_4672e5e5-5e45-9d7f-5afc-8262b9643473-c00ac0c3 {
-  grid-area: span 1 / span 1 / span 1 / span 1;
-}
-
 #w-node-_1bf12f7b-ea67-4048-48e3-596e6012b29e-c00ac0c8 {
   grid-template-rows: auto;
   grid-template-columns: 1.5fr 1fr;
@@ -1293,15 +1325,6 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  #w-node-_4672e5e5-5e45-9d7f-5afc-8262b9643471-c00ac0c3 {
-    grid-template-rows: auto;
-    grid-template-columns: 2fr;
-  }
-
-  #w-node-_4672e5e5-5e45-9d7f-5afc-8262b9643472-c00ac0c3, #w-node-_4672e5e5-5e45-9d7f-5afc-8262b9643473-c00ac0c3 {
-    grid-area: span 1 / span 1 / span 1 / span 1;
-  }
-
   #w-node-_1bf12f7b-ea67-4048-48e3-596e6012b29e-c00ac0c8 {
     grid-template-rows: auto;
     grid-template-columns: 1.5fr;
